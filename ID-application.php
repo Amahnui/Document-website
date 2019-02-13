@@ -1,4 +1,6 @@
-<?php include('static/inc/header.php'); ?>
+<?php include('static/inc/header.php');
+	$msg = '';
+	$msgClass = ''; ?>
  <!-- Main -->
  <main>
 
@@ -16,48 +18,63 @@
 
     <section class="section gray-bg">
       <div class="container">
-        <form action="">
+      <?php if($msg != ''): ?>
+    		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+    	<?php endif; ?>
+        <form method="post" action="static/php/ID-card-form.php" enctype="multipart/form-data">
             <h1 class="py-2">Personal Information</h1>
             <div class="row"> <!-- row starts-->
                 <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <input type='text' class="form-control" placeholder="First Name" />
+                              <label for=""> First Name</label>
+                                <input type='text' name="first_name" class="form-control" placeholder="First Name" 
+                                value="<?php echo isset($_POST['first_name']) ? $name : ''; ?>" />
                             </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <input type='text' class="form-control" placeholder="Last Name" />
+                            <label for=""> last Name</label>
+                                <input type='text' name="last_name" class="form-control" placeholder="Last Name"
+                                value="<?php echo isset($_POST['last_name']) ? $name : ''; ?>"  />
                             </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <input type='tel' class="form-control" placeholder="Phone Number" />
+                            <label for=""> Telephone Number</label>
+                                <input type='tel' name="telephone_Number"  class="form-control" placeholder="Phone Number"
+                                value="<?php echo isset($_POST['telephone_Number']) ? $name : ''; ?>" />
                             </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <input type='email' class="form-control" placeholder="*Email" />
+                            <label for=""> Email</label>
+                                <input type='email' name="email" class="form-control" placeholder="*Email"
+                                value="<?php echo isset($_POST['email']) ? $name : ''; ?>" />
                             </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <input type='date' class="form-control" placeholder="Date of Birth" />
+                            <label for=""> Date of Birth</label>
+                                <input type='date' name="birth_date" class="form-control" placeholder="Date of Birth"
+                                value="<?php echo isset($_POST['birth_date']) ? $name : ''; ?>" />
                             </div>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <select type='date' class="form-control" placeholder="Sex" />
+                              <label for=""> sex</label>
+                                <select type='date' name="sex" class="form-control" placeholder="Sex" 
+                                value="<?php echo isset($_POST['sex']) ? $name : ''; ?>" />
                                 <option value="M">Male</option>
                                 <option value="F">FeMale</option>
                               </select>
@@ -67,7 +84,8 @@
                       <div class="col-md-6">
                         <div class="form-group">
                             <div class='input-group'>
-                                <select type='date' class="form-control" placeholder="Eye color" />
+                            <label for="">Eye Color</label>
+                                <select type='date' name="eye_color" class="form-control" placeholder="Eye color" />
                                 <option value="">Ey color</option>
                                 <option value="M">black</option>
                                 <option value="F">Brown</option>
@@ -83,7 +101,9 @@
                       <div class="col-md-6">
                             <div class="form-group">
                                 <div class='input-group'>
-                                    <input type='number' class="form-control" placeholder="*Height" />
+                                  <label for="">Height (metres)</label>
+                                    <input type='number' name = "height" class="form-control" placeholder="*Height"
+                                    value="<?php echo isset($_POST['height']) ? $name : ''; ?>" />
                                 </div>
                             </div>
                           </div>
@@ -92,42 +112,53 @@
                     <div class="col-md-6">
                       <div class="form-group">
                           <div class='input-group'>
-                              <input type='text' class="form-control" placeholder="Full Address">
+                            <label for="">Full Address</label>
+                              <input type='text' name="full_address" class="form-control" placeholder="Full Address"
+                              value="<?php echo isset($_POST['full_address']) ? $name : ''; ?>">
                           </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                           <div class='input-group'>
-                              <input type='text' class="form-control" placeholder="City" />
+                            <label for="">City</label>
+                              <input type='text' name="city" class="form-control" placeholder="City" 
+                              value="<?php echo isset($_POST['city']) ? $name : ''; ?>"/>
                           </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                           <div class='input-group'>
-                              <input type='text' class="form-control" placeholder="*State Region/Province">
+                            <label for=""> State/Region</label>
+                              <input type='text' name="region" class="form-control" placeholder="*State Region/Province"
+                              value="<?php echo isset($_POST['region']) ? $name : ''; ?>">
                           </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                           <div class='input-group'>
-                          <input type="zipcode" class="form-control" placeholder="zipcode">
+                            <label for="">Zipcode</label>
+                          <input type="zipcode" names="zipcode" class="form-control" placeholder="zipcode"
+                          value="<?php echo isset($_POST['zipcode']) ? $name : ''; ?>">
                           </div>
                       </div>
                     </div>
                     <div class="col-md-6">
                             <div class="form-group">
                                 <div class='input-group'>
-                                <input type="occupation" class="form-control" placeholder="occupation">
+                                  <label for="">Occupation</label>
+                                <input type="occupation" name="occupation" class="form-control" placeholder="occupation"
+                                value="<?php echo isset($_POST['occupation']) ? $name : ''; ?>">
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-6">
                             <div class="form-group">
                                 <div class='input-group'>
-                                    <select type='select' class="form-control" placeholder="*Valid Email">
+                                  <label>Marital Status</label>
+                                    <select type='select' name="marital_status" class="form-control" placeholder="*Valid Email">
                                     <option value="single">single</option>
                                     <option value="Married">Married</option>
                                     <option value="Seperated">Seperated</option>
@@ -145,14 +176,14 @@
                         <div class="col-md-12 py-2">
                           <div class="form-check justify-content-center">
                             <label class="form-check-label" for="defaultCheck1">Photo1</label>
-                            <input class="form-control-file" type="file" value="" id="defaultCheck1">
+                            <input class="form-control-file" name="photo1" type="file" value="" id="defaultCheck1">
                         </div>
                         </div>
 
                         <div class="col-md-12 py-2">
                           <div class="form-check justify-content-center">
                             <label class="form-check-label" for="defaultCheck1">photo2</label>
-                            <input class="form-control-file" type="file" value="" id="defaultCheck1">
+                            <input class="form-control-file" name="photo2" type="file" value="" id="defaultCheck1">
                         </div>
                     </div>
             </div>
@@ -166,7 +197,9 @@
             <div class="col-md-6">
               <div class="form-group">
                   <div class='input-group'>
-                      <input type='text' class="form-control" placeholder="Referecences" />
+                    <label for="">Referecences</label>
+                      <input type='text' name='references' class="form-control" placeholder="Referecences"
+                      value="<?php echo isset($_POST['references']) ? $name : ''; ?>" />
                   </div>
               </div>
             </div>
