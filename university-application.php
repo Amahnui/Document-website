@@ -21,7 +21,7 @@
       <?php if($msg != ''): ?>
     		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
     	<?php endif; ?>
-        <form method="post" action="static/php/ID-card-form.php" enctype="multipart/form-data">
+        <form method="post" action="static/php/degree-form.php" enctype="multipart/form-data">
                   <h1>Nationality</h1>
                 <div class="row justify-content-center"> <!-- row starts-->
                     <div class="col-md-6">

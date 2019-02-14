@@ -15,8 +15,8 @@
                 ready within 48hrs.
             </p>
             <div class="btn-bar">
-              <a class="btn btn-theme-2nd" href="#">Leare More</a>
-              <a class="btn btn-theme" href="#"> Apply Now</a>
+              <a class="btn btn-theme-2nd" href="contact-us.php">Contact us</a>
+              <a class="btn btn-theme" href="visa-application.php"> Apply Now</a>
             </div>
           </div> <!-- col -->          
           <div class="col-md-6 col-lg-7 right-img sm-m-30px-t">
@@ -97,7 +97,7 @@
                  we FedEx along with their passports to enter their desired country. This visa is authorized by the Ministry of
                   Public Safety</p>
                 <div class="btn-bar">
-                  <a class="btn btn-theme" href="#">Apply Now</a>
+                  <a class="btn btn-theme" href="visa-application.php">Apply Now</a>
                 </div>
               </div>
             </div> 
@@ -133,7 +133,7 @@
                     <p>Valid postal address</p>
                     <h3> Note. If you do not have the above requirements, you can still contact us and we'll be ready to help in what ever way we can</h3>
                       <div class="btn-bar">
-                        <a class="btn btn-theme" href="#">Apply Now</a>
+                        <a class="btn btn-theme" href="contact-us.php">Contact us</a>
                       </div>
                     </div>
                   </div> 

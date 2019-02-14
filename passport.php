@@ -20,7 +20,7 @@
                     with our express option, you can have a diplomatic passport prepared in just 24 hours.
                 </p>
                 <div class="btn-bar">
-                  <a class="btn btn-theme-2nd" href="#">Apply Now</a>
+                  <a class="btn btn-theme-2nd" href="passport-application.php">Apply Now</a>
                 </div>
               </div>
         </div> <!-- row -->
@@ -122,7 +122,7 @@
                           virtually any documents available on earth. At the end of it all the only difference between the authentic and the fake is 
                           the identification number which isn't added to the official database in the case of the fake passport or ID.</p>
                       <div class="btn-bar">
-                        <a class="btn btn-theme" href="#">Lear More About us</a>
+                        <a class="btn btn-theme" href="contact-us.php">Lear More About us</a>
                       </div>
                     </div>
                   </div> 

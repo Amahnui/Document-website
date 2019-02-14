@@ -72,7 +72,7 @@
         <!-- Top Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
           <ul class="navbar-nav ml-auto align-items-center">
-            <li><a class="nav-link" href="#about">Home</a></li>
+            <li><a class="nav-link" href="index.php">Home</a></li>
             <li class="m-dropdown m-dropdown-multilevel">
                 <a class="nav-link" href="#">Services</a>
                 <i class="fa fa-angle-down m-dropdown-toggle"></i>

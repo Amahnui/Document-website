@@ -16,7 +16,7 @@
                 with our express option, you can have any driver license prepared in just 24 hours.
             </p>
             <div class="btn-bar">
-              <a class="btn btn-theme-2nd" href="#">Apply Now</a>
+              <a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a>
             </div>
           </div> <!-- col -->
           <div class="col-lg-7 text-center md-m-30px-t">
@@ -46,72 +46,72 @@
                          <tr>
                              <td> AM, p and Q</td>
                              <td> Moped up to 50cc (max speed 50km/h)</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> A1</td>
                              <td> Motorbikes with engine size up to 125cc, power output up to 11kW and power/weight ratio up to 0.1kW/kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> A</td>
                              <td> Motorbikes up to 25kW power output and power weight ratio up to 0.16kW/kg; motorbikes with sidecar and power weight ratio up to 0.16kW/kg; any size motorbike, with or without a sidecar if you’ve completed the large motorbike direct access scheme</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> B for 4-wheeled vehicles; A (restricted to trikes)</td>
                              <td>	3 or 4-wheeled vehicles up to 400kg unladen or 550kg if intended to carry goods</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> B</td>
                              <td> Vehicles up to 3,500kg MAM and up to 8 passenger seats with trailer up to 750kg; trailers over 750kg if combined weight of vehicle and trailer isn’t over 3,500kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> BE</td>
                              <td> 	Category B vehicles with trailer when combined weight of vehicle and trailer is over 3,500kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> C1</td>
                              <td> Vehicles weighing 3,500 to 7,500kg MAM with trailers up to 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td> C1E</td>
                              <td>	Category C1 vehicles with trailers over 750kg; the combined weight of vehicle and trailer can’t be over 12,000kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>C</td>
                              <td>Vehicles over 3,500kg with trailers up to 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>CE</td>
                              <td>Vehicles over 3,500kg with trailer over 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>D1</td>
                              <td>Vehicles with up to 16 passenger seats plus driver, with trailer up to 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>D1E</td>
                              <td>Vehicles with up to 16 passenger seats plus driver with trailer over 750kg, if combined trailer and vehicle weight isn’t over 12,000kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>D</td>
                              <td>Bus with more than 8 passenger seats, with trailer up to 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                          <tr>
                              <td>DE</td>
                              <td>	Bus with more than 8 passenger seats, with trailer over 750kg</td>
-                             <td><a class="btn btn-theme-2nd" href="#">Apply Now</a></td>
+                             <td><a class="btn btn-theme-2nd" href="driver-application.php">Apply Now</a></td>
                          </tr>
                      </tbody>  
                    </table>

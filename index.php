@@ -19,7 +19,7 @@
               <p>Get everything ready in one go. Explore and visit new places with ease. We promise to make your entire journey painless</p>
               <div class="btn-bar">
                 <a class="btn btn-theme-2nd" href="#about">Our services</a>
-                <a class="btn btn-theme" href="#">Contact Us</a>
+                <a class="btn btn-theme" href="contact-us.php">Contact Us</a>
               </div>
             </div>
           </div> <!-- col -->
@@ -51,7 +51,7 @@
             </div>
             <h4>Travel Visas</h4>
             <p>Acquire a ready made visa in just a fraction of the time it normally takes. just contact us </p>
-            <a class="btn btn-theme-2nd" href="visa.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="visa.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
 
@@ -62,7 +62,7 @@
             </div>
             <h4>International Passports</h4>
             <p>With our complete travel bundle you get a ready international passport in as early as 24 hours</p>
-            <a class="btn btn-theme-2nd" href="passport.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="passport.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
 
@@ -73,7 +73,7 @@
             </div>
             <h4>Academic Certificates</h4>
             <p>Need for certificate for a job promotion or a new job? We save you thes stress of doing it all</p>
-            <a class="btn btn-theme-2nd" href="University.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="University.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
 
@@ -84,7 +84,7 @@
             </div>
             <h4>Drivers License</h4>
             <p>We deliver fast quality drivers licenses of all categories at very affordable prices. </p>
-            <a class="btn btn-theme-2nd" href="drivers.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="drivers.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
       </div> <!-- row -->
@@ -96,7 +96,7 @@
             </div>
             <h4>ID Card</h4>
             <p>We deliver fast quality National Identification documents at very affordable prices. </p>
-            <a class="btn btn-theme-2nd" href="contact-us.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="contact-us.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
 
@@ -107,7 +107,7 @@
             </div>
             <h4>Resident permits</h4>
             <p>We can help you achieve quick temporal or permanet residence in any of the shengen countries</p>
-            <a class="btn btn-theme-2nd" href="resident.html">Read More</a>
+            <a class="btn btn-theme-2nd" href="resident.php">Read More</a>
           </div> <!-- feature -->
         </div> <!-- col -->
       </div> <!--row-end-->
@@ -217,7 +217,7 @@
             <p>We have succeded in creating a name for our selves from Nothing and we are really grateful for all the trust you have showed us</p>
             <p>For this and many other reasons we have decided to commit ourselves to offering you better services. You now have 24hrs support through our whatsapp numbers</p>
             <div class="m-35px-t">
-              <a class="btn btn-theme" href="contact-us.html">Contact us</a>
+              <a class="btn btn-theme" href="contact-us.php">Contact us</a>
             </div>
           </div>
         </div> <!-- col -->

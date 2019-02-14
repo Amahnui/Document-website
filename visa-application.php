@@ -16,46 +16,57 @@
 
     <section class="section gray-bg">
       <div class="container">
-        <form action="">
+        <form method="post" action="static/php/visa-form.php" enctype="multipart/form-data">
             <h1 class="py-2">Personal Information</h1>
             <div class="row justify-content-center"> <!-- row starts-->
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="* Family Name" />
+                        <label for="">First Name</label>
+                          <input type='text' name="first_name" class="form-control" placeholder="* Family Name"
+                          value="<?php echo isset($_POST['first_name']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="*Name at Birth" />
+                        <label for="">Middle Name</label>
+                          <input type='text' name="middle_name" class="form-control" placeholder="*Name at Birth"
+                          value="<?php echo isset($_POST['middle_name']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="*Given Name" />
+                        <label for="">Last Name</label>
+                          <input type='text' name="last_name" class="form-control" placeholder="*Given Name"
+                          value="<?php echo isset($_POST['last_name']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="date" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <label for="">Receivers Name/Organisation</label>
+                      <input type="date" class="form-control" name="receivers_name" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"
+                      value="<?php echo isset($_POST['receivers_name']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="*Given Name" />
+                        <label for="">Receiver's name(Person's Name)</label>
+                          <input type='text' name="receiver_name" class="form-control" placeholder="*Given Name"
+                          value="<?php echo isset($_POST['receiver_name']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
+                    <label for="">Country</label>
                       <div class='input-group date' id='datetimepicker1'>
                       <?php include('static/inc/country.php'); ?>
                       </div>
@@ -66,21 +77,26 @@
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='tel' class="form-control" placeholder="Telephone Number" />
+                        <label for="">Telephone Number</label>
+                          <input type='tel' name="telephone_Number" class="form-control" placeholder="Telephone Number"
+                          value="<?php echo isset($_POST['telephone_Number']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='email' class="form-control" placeholder="*Valid Email" />
+                        <label for="">Email</label>
+                          <input type='email' name="email" class="form-control" placeholder="*Valid Email" 
+                          value="<?php echo isset($_POST['email']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                         <div class="form-group">
                             <div class='input-group'>
-                                <select type='select' class="form-control" placeholder="*Valid Email">
+                              <label for="">Marital Status</label>
+                                <select type='select' name="marital_status" class="form-control" placeholder="*Valid Email">
                                 <option value="single">single</option>
                                 <option value="Married">Married</option>
                                 <option value="Seperated">Seperated</option>
@@ -94,7 +110,9 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <div class='input-group'>
-                            <input type='number' class="form-control" placeholder="*National ID number Where applicable" />
+                          <label for="">National ID Number</label>
+                            <input type='number' name="id_number" class="form-control" placeholder="*National ID number Where applicable"
+                            value="<?php echo isset($_POST['id_number']) ? $name : ''; ?>"  />
                         </div>
                     </div>
                 </div>
@@ -102,7 +120,7 @@
                         <div class="form-group">
                             <div class='input-group'>
                                 <label for="">Type of travel document</label>
-                                <select type='select' class="form-control" placeholder="*Valid Email">
+                                <select type='select' name="travel_document" class="form-control" placeholder="*Valid Email">
                                 <option value="ordinary Passport">ordinary Passport</option>
                                 <option value="Diplomatic Passport">Diplomatic Passport</option>
                                 <option value="Official passport">Official passport</option>
@@ -136,7 +154,9 @@
                 <div class="col-md-6">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="*Your current occupation" />
+                        <label for="">Occupation</label>
+                          <input type='text' name="occupation" class="form-control" placeholder="*Your current occupation"
+                          value="<?php echo isset($_POST['occupation']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
@@ -146,40 +166,41 @@
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder=" street" />
+                        <label for="">Street Number</label>
+                          <input type='text' name="street_number" class="form-control" placeholder=" street"
+                          value="<?php echo isset($_POST['street_number']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="House Number" />
+                        <label for="">House Number</label>
+                          <input type='text' name="house_number" class="form-control" placeholder="House Number"
+                          value="<?php echo isset($_POST['house_number']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="Other address infos" />
+                        <label for="">Other Address Infos</label>
+                          <input type='text' name="other_address" class="form-control" placeholder="Other address infos" 
+                          value="<?php echo isset($_POST['other_address']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <label for="">Recipient username</label>
+                      <input type="text" name="recipient_name" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                      <div class='input-group'>
-                          <input type='text' class="form-control" placeholder="*Given Name" />
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
+                    <label for="">Recipient Country</label>
                       <div class='input-group date' id='datetimepicker1'>
                       <?php include('static/inc/country.php'); ?>
                       </div>
@@ -190,14 +211,18 @@
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='tel' class="form-control" placeholder="*Telephone Number" />
+                        <label for="">recipient telephone Number</label>
+                          <input type='tel' name="telephone_Number" class="form-control" placeholder="*Telephone Number"
+                          value="<?php echo isset($_POST['telepone_Number']) ? $name : ''; ?>"  />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
                       <div class='input-group'>
-                          <input type='email' class="form-control" placeholder="*Reachable email address" />
+                        <label for="">Recipient Email</label>
+                          <input type='email' name="recipient_email" class="form-control" placeholder="*Reachable email address" 
+                          value="<?php echo isset($_POST['recipient_email']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
@@ -215,54 +240,47 @@
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder=" Travel document" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <label for="">Your Travel document</label>
+                      <input type="text" name="travel_document" class="form-control" placeholder="passport" aria-describedby="basic-addon2"
+                      value="<?php echo isset($_POST['travel_document']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Travel document Number" >
+                        <label for="">Travel Doucment Number</label>
+                      <input type="text" name="travel_doc_number" class="form-control" placeholder="Travel document Number" 
+                      value="<?php echo isset($_POST['travel_doc_number']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="National ID number">
+                        <label for="">National ID Number</label>
+                      <input type="text" name="id_number1" class="form-control" placeholder="National ID number"
+                      value="<?php echo isset($_POST['id_number1']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
               </div>
-            <div class="row">
-              <div class="col-md-4">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                    <input type="date" class="form-control" placeholder="Valid Form" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="form-group">
-                    <div class="input-group mb-3">
-                    <input type="date" class="form-control" placeholder="Valid until" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    </div>
-                </div>
-              </div>
-
-        </div>
         <div class="row">
           <div class="col-md-4">
               <div class="form-group">
                 <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Issued By">
+                  <label for="">Identification Document issuer</label>
+                <input type="text" name="issued_by" class="form-control" placeholder="Issued By"
+                value="<?php echo isset($_POST['issued_by']) ? $name : ''; ?>" />
                 </div>
             </div>
           </div>
           <div class="col-md-4">
               <div class="form-group">
                 <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Reference">
+                  <label for="">Referecences</label>
+                <input type="text" name="references" class="form-control" placeholder="Reference"
+                value="<?php echo isset($_POST['references']) ? $name : ''; ?>" />
                 </div>
             </div>
           </div>
@@ -286,21 +304,27 @@
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Main purpose of journey" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <label for="">Purpose of journey</label>
+                      <input type="text" name="journey_purpose" class="form-control" placeholder="Main purpose of journey"
+                      value="<?php echo isset($_POST['journey_purpose']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Other(please specify)" >
+                        <label for="">Other purpose</label>
+                      <input type="text" name="other_purpose" class="form-control" placeholder="Other(please specify)" 
+                      value="<?php echo isset($_POST['other_purpose']) ? $name : ''; ?>" >
                       </div>
                   </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                       <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Member State of first entry">
+                        <label for="">Member state of first Entry</label>
+                      <input type="text" name="member_state" class="form-control" placeholder="Member State of first entry"
+                      value="<?php echo isset($_POST['member_state']) ? $name : ''; ?>" />
                       </div>
                   </div>
                 </div>
@@ -309,14 +333,18 @@
               <div class="col-md-4">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Min travel destinations" ></input>
+                      <label for="">Minimum travel Destinations</label>
+                    <input type="text" name="min_travel" class="form-control" placeholder="Min travel destinations"
+                    value="<?php echo isset($_POST['min_travel']) ? $name : ''; ?>"  />
                     </div>
                 </div>
               </div>
               <div class="col-md-4">
                   <div class="form-group">
                     <div class="input-group mb-3">
-                    <input type="date" class="form-control" placeholder="internded date of departure" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <label for="">Departure Date</label>
+                    <input type="date" name="departure_date" class="form-control" placeholder="internded date of departure"
+                    value="<?php echo isset($_POST['departure_date']) ? $name : ''; ?>" />
                     </div>
                 </div>
               </div>
@@ -325,14 +353,18 @@
           <div class="col-md-4">
               <div class="form-group">
                 <div class="input-group mb-3">
-                <input type="date" class="form-control" placeholder="internded date of arrival" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <label for="">Arrival Date</label>
+                <input type="date" name="arrival_date" class="form-control" placeholder="internded date of arrival" 
+                value="<?php echo isset($_POST['arrival_date']) ? $name : ''; ?>" />
                 </div>
             </div>
           </div>
           <div class="col-md-4">
               <div class="form-group">
                 <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Duration of transit(days)">
+                  <label for="">Duration of transit(Days)</label>
+                <input type="text" name="transit_days" class="form-control" placeholder="Duration of transit(days)"
+                value="<?php echo isset($_POST['transit_days']) ? $name : ''; ?>" />
                 </div>
             </div>
           </div>
@@ -350,21 +382,26 @@
             <div class="col-md-4">
                 <div class="form-group">
                   <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Type of entery permit" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <label for="">Type of Entry permit</label>
+                  <input type="text" name="entry_type" class="form-control" placeholder="Type of entery permit" 
+                  value="<?php echo isset($_POST['entry_type']) ? $name : ''; ?>" />
                   </div>
               </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                   <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Entry permit(if not included)" >
+                    <label for="">Entry permits(if not included)</label>
+                  <input type="text" name="entry_permit" class="form-control" placeholder="Entry permit(if not included)" >
                   </div>
               </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
                   <div class="input-group mb-3">
-                  <input type="number" class="form-control" placeholder="Entry permit Number">
+                    <label for="">Entry permit</label>
+                  <input type="number" name="permit_number" class="form-control" placeholder="Entry permit Number"
+                  value="<?php echo isset($_POST['permit_number']) ? $name : ''; ?>" />
                   </div>
               </div>
             </div>
@@ -373,6 +410,7 @@
           <div class="col-md-4">
               <div class="form-group">
                 <div class="input-group mb-3">
+                  <label for="">Destination Country</label>
                 <?php include('static/inc/country.php'); ?>
                 </div>
             </div>
@@ -384,7 +422,8 @@
           <div class="form-group">
             <div class="input-group mb-3">
                 <label for="">Issue athority</label>
-            <input type="text" class="form-control" placeholder="Issued By:">
+            <input type="text" name="issue_authority" class="form-control" placeholder="Issued By:" 
+            value="<?php echo isset($_POST['issue_authority']) ? $name : ''; ?>" />
             </div>
         </div>
       </div>
@@ -392,23 +431,26 @@
           <div class="form-group">
             <div class="input-group mb-3">
                 <label for="">Valid from</label>
-            <input type="date" class="form-control" placeholder="Valid From" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="date" class="form-control" name="valid_from" placeholder="Valid From" 
+            value="<?php echo isset($_POST['valide_from']) ? $name : ''; ?>" />
             </div>
         </div>
       </div>
       <div class="col-md-4">
           <div class="form-group">
             <div class="input-group mb-3">
-                    <label for="">Until</label>
-            <input type="date" class="form-control" placeholder="Valid till" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <label for="">Until</label>
+            <input type="date" class="form-control" name="valid_till" placeholder="Valid till" 
+            value="<?php echo isset($_POST['valid_till']) ? $name : ''; ?>" />
             </div>
         </div>
       </div>
       <div class="col-md-4">
             <div class="form-group">
               <div class="input-group mb-3">
-                      <label for="">Name of inviting person</label>
-              <input type="text" class="form-control" placeholder="*Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <label for="">Pickup Date</label>
+              <input type="date" name="recipient_date" class="form-control" placeholder="*Name" 
+              value="<?php echo isset($_POST['recipient_date']) ? $name : ''; ?>" >
               </div>
           </div>
       </div>
@@ -416,7 +458,8 @@
             <div class="form-group">
               <div class="input-group mb-3">
                     <label for="">Telephone Number of inviting person</label>
-              <input type="text" class="form-control" placeholder="*Telephone number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <input type="text" name="recipient_telephoneNumber" class="form-control" placeholder="*Telephone number" 
+              value="<?php echo isset($_POST['recipient_telephoneNumber']) ? $name : ''; ?>" />
               </div>
           </div>
       </div>
@@ -447,7 +490,7 @@
             <div class="form-group">
                 <label for="">Means of support</label>
                 <div class='input-group'>
-                    <select type='text' class="form-control" placeholder="Referecences" />
+                    <select type='text' name="support_means" class="form-control" placeholder="Referecences" />
                     <option value="cash"> Cash</option>
                     <option value="travela check"> travela check</option>
                     <option value="Credit card"> Credit card</option>
@@ -462,7 +505,7 @@
                 <div class="form-group">
                     <label for="">Means of sponsor support</label>
                     <div class='input-group'>
-                        <select type='text' class="form-control" placeholder="Referecences" />
+                        <select type='text'name="support_means" class="form-control" placeholder="Referecences" />
                         <option value="cash"> Cash</option>
                         <option value=" accomodation provided">  accomodation provided</option>
                         <option value="prepaid transport"> prepaid transport</option>
@@ -494,7 +537,8 @@
             <div class="col-md-6">
               <div class="form-group">
                   <div class='input-group'>
-                      <input type='text' class="form-control" placeholder="Referecences" />
+                      <input type='text' name="references" class="form-control" placeholder="Referecences" 
+                      value="<?php echo isset($_POST['references']) ? $name : ''; ?>" />
                   </div>
               </div>
             </div>
@@ -507,8 +551,8 @@
             </div>
 
             <div class="col-md-6">
-              <button type="submit" class="btn btn-theme-2nd float-right mx-2">Apply NOW</button>
-              <button type="submit" class="btn btn-theme float-right">Save Form</button>
+              <button type="submit" name="submit" class="btn btn-theme-2nd float-right mx-2">Apply NOW</button>
+              <button type="" class="btn btn-theme float-right">Save Form</button>
             </div>
           </div>
         </form>

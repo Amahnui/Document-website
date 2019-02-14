@@ -50,7 +50,7 @@
                     <p>Valid postal address</p>
                     <h3> Note. If you do not have the above requirements, you can still contact us and we'll be ready to help in what ever way we can</h3>
                         <div class="btn-bar">
-                        <a class="btn btn-theme" href="#">Apply Now</a>
+                        <a class="btn btn-theme" href="contact-us.php">contact us</a>
                         </div>
                     </div>
                     </div> 
@@ -184,7 +184,7 @@
                 <p>We have succeded in creating a name for our selves from Nothing and we are really grateful for all the trust you have showed us</p>
                 <p>For this and many other reasons we have decided to commit ourselves to offering you better services. You now have 24hrs support through our whatsapp numbers</p>
                 <div class="m-35px-t">
-                    <a class="btn btn-theme" href="#">Contact us</a>
+                    <a class="btn btn-theme" href="contact-us.php">Contact us</a>
                 </div>
                 </div>
             </div> <!-- col -->
@@ -252,7 +252,7 @@
                 <p>Valid postal address</p>
                 <h3> Note. If you do not have the above requirements, you can still contact us and we'll be ready to help in what ever way we can</h3>
                     <div class="btn-bar">
-                    <a class="btn btn-theme" href="#">Apply Now</a>
+                    <a class="btn btn-theme" href="contact-us.php">contact us</a>
                     </div>
                 </div>
                 </div> 
@@ -329,7 +329,7 @@
             <div class="side-title m-15px-t">
               <h2>What People are Saying</h2>
               <p class="m-40px-b">We fight to keep our reputation, That's our passion</p>
-              <a class="btn btn-theme-2nd" href="#">Apply Now</a>
+              <a class="btn btn-theme-2nd" href="contact-us.php">Contact us</a>
             </div>
           </div>
           <div class="col-md-8">

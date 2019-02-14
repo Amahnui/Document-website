@@ -14,7 +14,7 @@
             <p> Get a degree for a new job or job promotion is fast and cheaper with us. All you need to do is: singup and comp
               let the registration and we can make everything available in as early and 2</p>
             <div class="btn-bar">
-              <a class="btn btn-theme-2nd" href="#">Apply Now</a>
+              <a class="btn btn-theme-2nd" href="university-application.php">Apply Now</a>
             </div>
           </div> <!-- col -->
           <div class="col-lg-7 right-img md-m-30px-t">
