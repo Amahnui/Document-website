@@ -348,59 +348,24 @@
     </div>
   </section>
 
-  <!-- Contact us -->
   <section id="contatus" class="section p-50px-t gray-bg effect-section">
-    <div class="effect-top">
-      <img src="static/img/effect-top.svg" title="" alt="">
-    </div>
-    <div class="container">
-      <div class="row justify-content-center m-60px-b md-m-40px-b">
-        <div class="col-md-10 col-lg-7">
-          <div class="section-title text-center">
-            <h6>Contact Us</h6>
-            <h2 class="theme-after">Get In Touch</h2>
-            <p>For any further inquirie please contact us by using the form below. If you need quicker replies then consider using our live chat or our whatsapp numbers available on the site</p>
-          </div>
-        </div> <!-- col -->
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <div class="contact-form md-m-30px-b">
-              <h2>Say Something</h2>
-              <form class="contactform" method="post" action="static/php/process-form.php">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input id="name" name="name" type="text" placeholder="Name" class="validate form-control" required>
-                        <span class="input-focus-effect"></span>
-                      </div>
-                      </div>
-                      <div class="col-md-6">
-                      <div class="form-group">
-                        <input id="email" type="email" placeholder="Email" name="email" class="validate form-control" required>
-                        <span class="input-focus-effect"></span>
-                      </div>
-                      </div>
-                      <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea id="message" placeholder="Your Comment" name="message" class="form-control" required></textarea>
-                        <span class="input-focus-effect"></span>
-                      </div>
-                     </div>
-                      <div class="col-md-12">
-                        <div class="send">
-                           <button class="btn btn-theme" type="submit" name="send"> send message</button>
-                        </div>
-                        <span class="output_message"></span>
-                      </div>
-                    </div>
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="effect-top">
+              <img src="static/img/effect-top.svg" title="" alt="">
+            </div>
+            <div class="container">
+              <div class="row justify-content-center m-60px-b md-m-40px-b">
+                <div class="col-md-10 col-lg-7">
+                  <div class="section-title text-center">
+                    <h6>Contact Us</h6>
+                    <h2 class="theme-after">Get In Touch</h2>
+                    <p>For any further inquirie please contact us by using the form below. If you need quicker replies then consider using our live chat or our whatsapp numbers available on the site</p>
+                  </div>
+                </div> <!-- col -->
+              </div>
+      
+              <?php include('static/inc/contact-form.php'); ?>
+            </div>
+    </section>
 
 </main>
 

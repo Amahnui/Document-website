@@ -4,8 +4,8 @@
   <main>
 
     <!-- Home -->
-    <section id="home" class="home-section home-banner-03 theme-main">
-      <div class="home-effect-bg"><img src="static/img/home-banner-3.svg" title="" alt=""></div>
+    <section id="home" class="home-section theme-main home-banner">
+      <div class="home-effect-bg"><img src="static/img/home-effect.svg"" title="" alt=""></div>
       <div class="container container-large">
         <div class="row align-items-center p-100px-tb sm-p-40px-b">
           <div class="col-lg-5 p-50px-t sm-p-0px-t sm-p-30px-b" style="color: white;">
@@ -324,41 +324,7 @@
                 </div> <!-- col -->
               </div>
       
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="contact-form md-m-30px-b">
-                      <h2>Say Something</h2>
-                      <form class="contactform" method="post" action="static/php/process-form.php">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <input id="name" name="name" type="text" placeholder="Name" class="validate form-control" required>
-                                <span class="input-focus-effect"></span>
-                              </div>
-                              </div>
-                              <div class="col-md-6">
-                              <div class="form-group">
-                                <input id="email" type="email" placeholder="Email" name="email" class="validate form-control" required>
-                                <span class="input-focus-effect"></span>
-                              </div>
-                              </div>
-                              <div class="col-md-12">
-                              <div class="form-group">
-                                <textarea id="message" placeholder="Your Comment" name="message" class="form-control" required></textarea>
-                                <span class="input-focus-effect"></span>
-                              </div>
-                             </div>
-                              <div class="col-md-12">
-                                <div class="send">
-                                   <button class="btn btn-theme" type="submit" name="send"> send message</button>
-                                </div>
-                                <span class="output_message"></span>
-                              </div>
-                            </div>
-                      </form>
-                  </div>
-                </div>
-              </div>
+              <?php include('static/inc/contact-form.php'); ?>
             </div>
           </section>
 

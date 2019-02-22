@@ -55,7 +55,7 @@
       <div class="container container-large">
         <!-- Brand -->
         
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.php">
             <img class="light-logo" src="static/img/logo-light.svg" title="" alt="">
             <img class="dark-logo" src="static/img/logo.svg" title="" alt="">
           </a>

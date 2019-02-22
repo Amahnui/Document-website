@@ -4,9 +4,9 @@
   <main>
 
     <!-- Home -->
-    <section id="home" class="home-banner-01">
+    <section id="home" class="home-section theme-main home-banner">
       <div class="home-effect-bg">
-        <img src="static/img/home-effect-3.svg" title="" alt=""></div>
+        <img src="static/img/home-effect.svg"" title="" alt=""></div>
       <div class="container container-large">
         <div class="row align-items-center full-screen p-100px-tb md-p-50px-b">
           <div class="col-md-8 col-lg-5 md-m-50px-t">
@@ -25,14 +25,14 @@
           </div> <!-- col -->
           <!-- col-lg-7 right-img sm-m-30px-t -->
           <div class=" col-lg-7 right-img sm-m-30px-t ">
-            <img src="static/img/coverMain.png" title="" alt="">
+            <img src="static/img/frontCover.png" title="" alt="">
           </div>
         </div> <!-- row -->
       </div>
     </section>
       
 <!-- About Us -->
-<section class="p-50px-t section effect-bg" id="about">
+<section class="p-50px-t section gray-bg" id="about">
   <div class="container">
     <div class="row justify-content-center m-45px-b md-m-25px-b">
       <div class="col-md-10 col-lg-8 col-xl-7">
@@ -116,13 +116,14 @@
 <!-- / -->
 
     <!-- Feature -->
-    <section id="feature" class="section gray-bg">
+    <section id="feature" class="section">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-8">
             <div class="side-title m-15px-t md-m-0px-t md-m-35px-b">
               <h2>Why choose us?</h2>
-              <p class="m-30px-b">We're loved because to the difference we make from the others. We make the process a painless</p>
+              <p class="m-30px-b">We're loved because to the difference we make from the others. We make you achieve quicker results With
+              lesser efforts</p>
             </div>
           </div>
           <div class="col-lg-8 col-md-12">
@@ -402,7 +403,7 @@
 
                 <h4><a class="theme-color" href="#">Drivers licenses of any category now available.</a></h4>
                 <p>we have also improved on our drivers license categories and we now offer license from category of your choice</p>
-                <a href="#" class="btn-link">Read More</a>
+                <a href="blog-details.php" class="btn-link">Read More</a>
               </div><!-- /blog-content -->
             </div>
           </div> <!-- col -->
@@ -449,41 +450,7 @@
           </div> <!-- col -->
         </div>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="contact-form md-m-30px-b">
-                <h2>Say Something</h2>
-                <form class="contactform" method="post" action="static/php/process-form.php">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <input id="name" name="name" type="text" placeholder="Name" class="validate form-control" required>
-                          <span class="input-focus-effect"></span>
-                        </div>
-                        </div>
-                        <div class="col-md-6">
-                        <div class="form-group">
-                          <input id="email" type="email" placeholder="Email" name="email" class="validate form-control" required>
-                          <span class="input-focus-effect"></span>
-                        </div>
-                        </div>
-                        <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea id="message" placeholder="Your Comment" name="message" class="form-control" required></textarea>
-                          <span class="input-focus-effect"></span>
-                        </div>
-                       </div>
-                        <div class="col-md-12">
-                          <div class="send">
-                             <button class="btn btn-theme" type="submit" name="send"> send message</button>
-                          </div>
-                          <span class="output_message"></span>
-                        </div>
-                      </div>
-                </form>
-            </div>
-          </div>
-        </div>
+        <?php include('static/inc/contact-form.php'); ?>
       </div>
     </section>
 

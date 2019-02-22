@@ -290,7 +290,25 @@
         </div> <!-- row -->
       </div>
     </section>
-    
+     <!-- Contact us -->
+  <section id="contatus" class="section p-50px-t gray-bg effect-section">
+            <div class="effect-top">
+              <img src="static/img/effect-top.svg" title="" alt="">
+            </div>
+            <div class="container">
+              <div class="row justify-content-center m-60px-b md-m-40px-b">
+                <div class="col-md-10 col-lg-7">
+                  <div class="section-title text-center">
+                    <h6>Contact Us</h6>
+                    <h2 class="theme-after">Get In Touch</h2>
+                    <p>For any further inquirie please contact us by using the form below. If you need quicker replies then consider using our live chat or our whatsapp numbers available on the site</p>
+                  </div>
+                </div> <!-- col -->
+              </div>
+      
+              <?php include('static/inc/contact-form.php'); ?>
+            </div>
+    </section> 
       
 
   </main>
